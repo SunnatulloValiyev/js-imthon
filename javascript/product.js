@@ -1,3 +1,5 @@
+import "./darkmode.js"
+
 const id = new URLSearchParams(window.location.search).get("id");
 
 
@@ -38,3 +40,13 @@ const showProduct = (product) => {
         </a>
     `;
 };
+
+window.addEventListener("load", () => {
+    const loader = document.getElementById("loader");
+    const content = document.getElementById("content");
+
+    setTimeout(() => {
+        loader.style.display = "none";
+        content.classList.remove("hidden");
+    }, 2000);
+});
