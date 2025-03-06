@@ -21,3 +21,5 @@ window.addEventListener("load", () => {
         content.classList.remove("hidden");
     }, 2000);
 });
+
+
