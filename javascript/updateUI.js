@@ -26,7 +26,7 @@ const showCards = ({ products }) => {
         const priceDiscount = clone.querySelector(".price-with-discount");
         const buyBtn = clone.querySelector(".buy-btn");
 
-        a.href = `./product.html?id=${id}`
+        a.href = `/product.html?id=${id}`
 
         img.src = thumbnail;
         img.alt = title;
